@@ -1,26 +1,60 @@
 * {
     margin: 0;
-}
-body{
-    background-color: #000;
+    font-family: Helvetica, sans-serif;
 }
 
+
 @media only screen and (min-width: 600px) {
+    body {
+        /* background-color: #000; */
+        background-image: url("images/sushiBackground.png");
+        background-size: cover;
+    }
+
+    h1 {
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+
     header {
-        /* background-color: antiquewhite; */
         background-image: url("images/headerBackground.png");
         background-repeat: no-repeat;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2%;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 50% 50%;
         color: #fff;
+        font-size: 1.5rem;
+        font-weight: lighter;
 
     }
 
     #headerLeft {
         display: flex;
+        justify-content: left;
+        align-items: center;
+    }
+
+    #name {
+        margin-left: 10%;
+        font-weight: lighter;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        /* font-size: 150%; */
+    }
+
+    a:hover {
+        color: #d08c17;
+    }
+
+    nav {
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
-@media only screen and (max-width: 600px) {
-}
+
+@media only screen and (max-width: 600px) {}
