@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+body{
+    background-color: #000;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        /* background-color: antiquewhite; */
+        background-image: url("images/headerBackground.png");
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2%;
+        color: #fff;
+
+    }
+
+    #headerLeft {
+        display: flex;
+    }
+}
+@media only screen and (max-width: 600px) {
+}
