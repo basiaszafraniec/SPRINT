@@ -55,6 +55,12 @@
         justify-content: space-between;
         align-items: center;
     }
+    #basketYellow{
+        display: none;
+    }
+    #basketWhite{
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 600px) {}
