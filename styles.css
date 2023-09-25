@@ -27,26 +27,64 @@ body {
 h1 {
     /* page title */
     font-weight: lighter;
-    font-size: 1.5rem;
-    font-family: serif;
+    font-size: 1.7rem;
+    font-family: var(--serifFont);
 
 }
 
 h2 {
-    /* john smith slogan thing */
     font-weight: lighter;
     font-size: 2.5rem;
     font-family: var(--serifFont);
-    margin: 5px 0px;
 }
 
+
+
 h3 {
-    /* the title of 3 circles thing on the top page */
     font-family: var(--serifFont);
+    font-weight: lighter;
     text-align: center;
     font-size: 1.7rem;
+}
+
+
+/* breadcrumb */
+    /* Style the list */
+    ul.breadcrumb {
+        padding: 20px 20px;
+        list-style: none;
+    }
+    
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 1rem;
+    }
+    
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb li+li:before {
+        padding: 8px;
+        color: var(--softWhite);
+        content: ">";
+    }
+    
+    /* Add a color to all links inside the list 
+    ul.breadcrumb li a {
+        color: #0275d8;
+        text-decoration: none;
+    }*/
+    
+    /* Add a color on mouse-over */
+    ul.breadcrumb li a:hover {
+        color: var(--niceOrange);
+    }
+
+
+.circleArticle h3 {
     color: var(--niceOrange);
 }
+
+
 
 h4 {
     color: var(--niceOrange);
@@ -150,15 +188,16 @@ a:hover {
 }
 
 section {
-    margin: 60px 0px;
+    margin: 50px 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    position: relative;
 
     /*background-color: green;*/
 
 }
-.articles {
+.circleArticle {
     margin: 20px;
     padding: 30px;
     position: relative;
@@ -175,7 +214,7 @@ section {
     
 }
 
-hr {
+.circleArticle>hr {
     /* the horizontal lines below the 3 circle things */
     border: 1px solid var(--softWhite);
     margin: 20px 0px;
@@ -208,7 +247,7 @@ footer {
 
 .footerContainers {
     /*border: solid red;*/
-    width: 40%;
+    width: 50%;
     min-width: 300px;
     padding: 20px 0px;
 }
@@ -219,12 +258,99 @@ footer {
 
 .footerContainers div {
     /*border: solid blue;*/
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 td {
     padding: 0px 7px;
 }
+
+/* category page*/ 
+
+    #categoriesHeader {
+        border: red solid 1px;
+        margin-top: 50px;
+    }
+    .categories h2 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .categories p {
+        text-align: center;
+        margin: 10px;
+    }
+
+    #options {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px;
+        border: blue solid 1px;
+    }
+    #veganOption {
+        color: green;
+        margin: 0px 20px;
+    }
+
+    #spicyOption {
+        color: red;
+        margin: 0px 20px;
+    }
+
+
+    .categories h3 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+
+    /* the box of "buffet", "sushi" etc */
+    .categories article {
+        height: 200px;
+        width: 300px;
+        /* margin: 60px 40px;*/
+        border-radius: 10px;
+        text-align: center;
+        position: relative;
+
+        border: solid var(--softWhite) 2px;
+    }
+
+    .categories a {
+        margin: 60px 40px;
+    }
+
+
+    .menuList {
+        height: 120px;
+        margin: 100px;
+
+        display: flex;
+        flex-wrap: wrap;
+        border: red solid 1px;
+    }
+
+
+    .menuIcon {
+        height: 120px;
+        width: 120px;
+        border: blue solid 1px;
+    }
+    
+    .menuDescription {
+        border: green solid 1px;
+
+    }
+
+    .menuDescription>hr {
+        
+    }
+
+
+
 
 
 @media only screen and (max-width: 1000px) {
@@ -259,7 +385,7 @@ td {
         top: 0px;
         right: 0px;
         text-align: center;
-        margin-top: 70px;
+        margin-top: 90px;
         
     }
 
