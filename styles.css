@@ -17,9 +17,6 @@
 
 }
 
-
-
-
 body {
     background-color: var(--backBlack);
 }
@@ -29,7 +26,6 @@ h1 {
     font-weight: lighter;
     font-size: 1.7rem;
     font-family: var(--serifFont);
-
 }
 
 h2 {
@@ -38,14 +34,11 @@ h2 {
     font-family: var(--serifFont);
 }
 
-
-
 h3 {
     font-family: var(--serifFont);
     font-weight: lighter;
     font-size: 1.7rem;
 }
-
 
 /* breadcrumb */
 /* Style the list */
