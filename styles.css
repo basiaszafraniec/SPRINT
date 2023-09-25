@@ -259,7 +259,16 @@ footer {
     /*border: solid blue;*/
     width: 80%;
     margin: auto;
+    position: relative;
 }
+
+#logos {
+    /* border: red solid 1px; */
+    height: 25px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
 
 td {
     padding: 0px 7px;
@@ -405,6 +414,9 @@ td {
     background-color: #242424;
     color: var(--niceOrange);
 }
+
+
+
 
 
 
