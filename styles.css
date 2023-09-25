@@ -120,6 +120,9 @@ header {
 #headerRight {
     padding-right: 10px;
 }
+#burgerIcon {
+    display: none;
+}
 
 a {
     text-decoration: none;
@@ -131,12 +134,14 @@ a {
     display: none;
     height: 20px;
     position: relative;
+    top: 3px;
 }
 
 #basketWhite {
     display: inline-block;
     height: 20px;
     position: relative;
+    top: 3px;
 }
 
 
@@ -152,26 +157,14 @@ nav {
     margin-right: 30px;
 }
 
+#burgerMenu {
+    display: none;
+}
+
 /* make it orange when its hovered*/
 a:hover {
     color: var(--niceOrange);
 }
-
-/*
-#basketYellow{
-    display: none;
-}
-
-*/
-
-
-/*
-
-a:hover {
-    color: #d08c17;
-}
-
-*/
 
 #mainSlider {
     background-image: url("images/frontBackgroundDimmed.png");
@@ -411,6 +404,16 @@ td {
 .menuDescription>hr {}
 
 
+.navListB{
+    padding: 10px;
+    text-align: center;
+}
+.navListB:hover{
+    background-color: #242424;
+    color: var(--niceOrange);
+}
+
+
 
 
 
@@ -427,6 +430,15 @@ td {
         position: absolute;
         top: 520px;
         right: 40px;
+    }
+
+    #headerRight {
+        display: none;
+    }
+    #burgerIcon {
+        display: inline-block;
+        font-size:2rem;
+        margin-right: 20px;
     }
 }
 
