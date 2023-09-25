@@ -49,35 +49,35 @@ h3 {
 
 
 /* breadcrumb */
-    /* Style the list */
-    ul.breadcrumb {
-        padding: 20px 20px;
-        list-style: none;
-    }
-    
-    /* Display list items side by side */
-    ul.breadcrumb li {
-        display: inline;
-        font-size: 1rem;
-    }
-    
-    /* Add a slash symbol (/) before/behind each list item */
-    ul.breadcrumb li+li:before {
-        padding: 8px;
-        color: var(--softWhite);
-        content: ">";
-    }
-    
-    /* Add a color to all links inside the list 
+/* Style the list */
+ul.breadcrumb {
+    padding: 20px 20px;
+    list-style: none;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 1rem;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: var(--softWhite);
+    content: ">";
+}
+
+/* Add a color to all links inside the list 
     ul.breadcrumb li a {
         color: #0275d8;
         text-decoration: none;
     }*/
-    
-    /* Add a color on mouse-over */
-    ul.breadcrumb li a:hover {
-        color: var(--niceOrange);
-    }
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: var(--niceOrange);
+}
 
 
 .circleArticle h3 {
@@ -127,12 +127,26 @@ a {
 
 }
 
+/* alternative baskets for changing color */
+#basketYellow {
+    display: none;
+    height: 20px;
+    position: relative;
+}
+
+#basketWhite {
+    display: inline-block;
+    height: 20px;
+    position: relative;
+}
+
 
 /* navigation list */
 nav {
     text-align: right;
     list-style-type: none;
 }
+
 .navList {
     display: inline;
     margin-left: 30px;
@@ -150,11 +164,6 @@ a:hover {
 }
 
 */
-#basketWhite{
-    height: 20px;
-    position: relative;
-    top: 4px
-}
 
 
 /*
@@ -197,6 +206,7 @@ section {
     /*background-color: green;*/
 
 }
+
 .circleArticle {
     margin: 20px;
     padding: 30px;
@@ -205,13 +215,13 @@ section {
     height: auto;
     width: 250px;
 
-    
+
     /*background-color: red;
     border-width: 3px;
     border-color: blue;
     border-style: solid;
     */
-    
+
 }
 
 .circleArticle>hr {
@@ -222,7 +232,7 @@ section {
 
 #learnMoreArticles {
     color: var(--niceOrange);
-    
+
     text-align: right;
     position: absolute;
     bottom: 0px;
@@ -261,104 +271,105 @@ footer {
     width: 80%;
     margin: auto;
 }
+
 td {
     padding: 0px 7px;
 }
 
-/* category page*/ 
+/* category page*/
 
-    #categoriesHeader {
-        border: red solid 1px;
-        margin-top: 50px;
-    }
-    .categories h2 {
-        font-size: 3.5rem;
-        text-align: center;
-    }
+#categoriesHeader {
+    border: red solid 1px;
+    margin-top: 50px;
+}
 
-    .categories p {
-        text-align: center;
-        margin: 10px;
-    }
+.categories h2 {
+    font-size: 3.5rem;
+    text-align: center;
+}
 
-    #options {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 10px;
-        border: blue solid 1px;
-    }
-    #veganOption {
-        color: green;
-        margin: 0px 20px;
-    }
+.categories p {
+    text-align: center;
+    margin: 10px;
+}
 
-    #spicyOption {
-        color: red;
-        margin: 0px 20px;
-    }
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    border: blue solid 1px;
+}
 
+#veganOption {
+    color: green;
+    margin: 0px 20px;
+}
 
-    .categories h3 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        
-    }
-
-    /* the box of "buffet", "sushi" etc */
-    .categories article {
-        height: 200px;
-        width: 300px;
-        /* margin: 60px 40px;*/
-        border-radius: 10px;
-        text-align: center;
-        position: relative;
-
-        border: solid var(--softWhite) 2px;
-    }
-
-    .categories a {
-        margin: 60px 40px;
-    }
+#spicyOption {
+    color: red;
+    margin: 0px 20px;
+}
 
 
-    .menuList {
-        height: 120px;
-        margin: 100px;
+.categories h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-        display: flex;
-        flex-wrap: wrap;
-        border: red solid 1px;
-    }
+}
+
+/* the box of "buffet", "sushi" etc */
+.categories article {
+    height: 200px;
+    width: 300px;
+    /* margin: 60px 40px;*/
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+
+    border: solid var(--softWhite) 2px;
+}
+
+.categories a {
+    margin: 60px 40px;
+}
 
 
-    .menuIcon {
-        height: 120px;
-        width: 120px;
-        border: blue solid 1px;
-    }
-    
-    .menuDescription {
-        border: green solid 1px;
+.menuList {
+    height: 120px;
+    margin: 100px;
 
-    }
+    display: flex;
+    flex-wrap: wrap;
+    border: red solid 1px;
+}
 
-    .menuDescription>hr {
-        
-    }
+
+.menuIcon {
+    height: 120px;
+    width: 120px;
+    border: blue solid 1px;
+}
+
+.menuDescription {
+    border: green solid 1px;
+
+}
+
+.menuDescription>hr {}
 
 
 
 
 
 @media only screen and (max-width: 1000px) {
-   
+
     /* make the john smith slogan thing a bit smaller to fit*/
 
     h2 {
-        
+
         font-size: 1.8rem;
     }
 
@@ -386,8 +397,7 @@ td {
         right: 0px;
         text-align: center;
         margin-top: 90px;
-        
+
     }
 
 }
-
